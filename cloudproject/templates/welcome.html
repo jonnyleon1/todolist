@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-11"></div>
+<div class="col-sm-1">
+    <br>
+<button type="button" onclick="location.href='{% url 'log' %}'">Logout</button>
+    
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-sm-4">
+</div>
+    <br><br>
+<div class="col-sm-8">
+    
+<h1> Welcome {{e}} </h1>
+    
+</div>
+</div>
+
+<br><br><br><br>
+<button type="button" onclick="location.href='{% url 'create' %}'">Add Yet another painful task</button>
+<button type="button" onclick="location.href='{% url 'check' %}'"> Review all of those impossible tasks</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+    <div class="container" style="background-color:lightgrey">  
+        <div class="row"> 
+            <div class="col-sm-12" style="background-color:white;"> <br><br><br></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            
+            <h1 style="color:white; font-family: inherit";> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remaining Tasks </h1></div>
+        <div class="col-sm-4"></div>
+            
+     
+
+<div class="col-sm-11"></div>
+    <div class="col=sm-1"> <br> <br><br><br>
+<button type="button" onclick="location.href='{% url 'log' %}'">Logout</button>
+    </div>
+    </div>
+
+    
+<div class="container">
+   <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="background-color: seashell;border-radius: 3px; font-family: inherit; color:black; font-weight: 500;">
+
+<!-- Welcome {{e}} -->
+{% for time,work in comb_lis %}
+
+
+    
+Still to complete: <a href="/post_check/?z={{time}}"  >{{work}}</a>
+<br>
+    
+
+{% endfor %}
+    </div>
+    </div>
+      <div class="row">
+        
+    <br><br><br><br><br></div>
+      </div>
+
+    
+
+</body>
+</html>

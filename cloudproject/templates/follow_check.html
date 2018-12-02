@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    
+
+    <div class="container" style="background-color:lightgrey;">  
+        <div class="row"> 
+            <div class="col-sm-12" style="background-color:white;"> <br><br><br></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-6">
+            
+            <h1 style="color:white; font-family: sans-serif";> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specific Task </h1></div>
+
+
+    <div class="col-sm-1">
+        <br> <br>
+
+        <button type="button" onclick="location.href='{% url 'log' %}'">Logout</button> </div>
+    
+    <div class="row">
+        
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+    
+ <!--   Welcome {{e}} -->
+        <br>
+
+<div class="row">
+        
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6" style="background-color:seashell; border-radius:5px;"> <br>
+Module :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{w}}<br> <br>
+Task To Do: {{p}}<br>
+        <br> <br> 
+        <input type="checkbox"onchange='handleChange(this);' name="Task Completed" value="yes" checked="checked"> Task Complete
+
+        
+    <div class="row">
+        <div class="col-sm-12" style="background-color:lightgrey;">
+        <br> <br> <br> <br>
+        </div>
+        </div>
+   </div> </div>
+    </div>
+    </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>

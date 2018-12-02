@@ -1,0 +1,53 @@
+{% if messg %}
+<script>
+    alert('{{ messg }}');
+</script>
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    
+    <div class="container">
+    
+    <div class="row">
+        <div class=col-sm-12> <br> <br> <br> <br><br><br><br><br></div>
+        <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="background-color:lightgray;">
+<form action="/postsign/" method="post"> <br>
+    {% csrf_token %}
+    &nbsp;&nbsp;&nbsp;
+    
+    Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+    <input type="email" name="email"><br><br>
+    &nbsp;&nbsp;&nbsp;
+    
+    Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="password" name="pass"><br><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    
+    <input type="submit" value="SignIn">
+    <button type="button" onclick="location.href='{% url 'signup' %}'">SignUp</button> <br> <br> 
+</form>
+    </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
